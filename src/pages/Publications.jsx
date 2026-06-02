@@ -79,8 +79,6 @@ export default function Publications() {
     startIndex + itemsPerPage
   );
 
-  const totalCitations = papers.reduce((sum, paper) => sum + paper.citations, 0);
-
   const goToPage = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
