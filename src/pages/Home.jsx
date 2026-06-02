@@ -834,7 +834,7 @@ export default function Home() {
         className="relative min-h-[560px] sm:min-h-[520px] md:min-h-[440px] lg:min-h-[520px] overflow-hidden flex items-center bg-[#fbfaf8] bg-cover bg-center bg-no-repeat py-12 sm:py-14 md:py-0"
         style={{ backgroundImage: showHeroBg ? `url(${home})` : "none" }}
       >
-        <div className="relative z-20 max-w-[1180px] mx-auto w-full px-6 sm:px-6 lg:px-[46px]">
+        <div className="relative z-20 max-w-[1180px] mx-auto w-full px-5 sm:px-6 lg:px-[46px]">
           <motion.div
             initial={{ opacity: 0, y: 45 }}
             animate={{ opacity: 1, y: 0 }}
