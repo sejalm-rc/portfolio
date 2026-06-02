@@ -7,7 +7,6 @@ import {
   Radio,
   Play,
   Image,
-  ArrowRight,
   ExternalLink,
   ChevronLeft,
   ChevronRight,
@@ -26,6 +25,12 @@ import image8 from "../assets/media8.jpeg";
 import image9 from "../assets/media9.jpeg";
 import image10 from "../assets/media10.jpeg";
 import image11 from "../assets/media11.jpeg";
+import image12 from "../assets/media12.jpeg";
+import image13 from "../assets/media13.jpeg";
+import image14 from "../assets/media14.jpeg";
+import image15 from "../assets/media15.jpeg";
+import image16 from "../assets/media16.jpeg";
+
 
 
 
@@ -53,36 +58,36 @@ const tabs = [
   { label: "Gallery", icon: <Image size={14} /> },
 ];
 
-const featured = [
-  {
-    image: image,
-    type: "Interview",
-    date: "May 15, 2024",
-    title: "Interview on AI & the Future of Smart Cities",
-    source: "elets TV",
-  },
-  {
-    image: image2,
-    type: "Podcast",
-    date: "Apr 22, 2024",
-    title: "Podcast: Research, Innovation & Real-World Impact",
-    source: "The Research Matters",
-  },
-  {
-    image: image3,
-    type: "Talk",
-    date: "Mar 10, 2024",
-    title: "Keynote Talk at International Conference on Data Engineering",
-    source: "ICDE 2024",
-  },
-  {
-    image: image4,
-    type: "Feature",
-    date: "Feb 5, 2024",
-    title: "Top 2% Scientist in the World: Elsevier Stanford List 2024",
-    source: "Times of India",
-  },
-];
+// const featured = [
+//   {
+//     image: image,
+//     type: "Interview",
+//     date: "May 15, 2024",
+//     title: "Interview on AI & the Future of Smart Cities",
+//     source: "elets TV",
+//   },
+//   {
+//     image: image2,
+//     type: "Podcast",
+//     date: "Apr 22, 2024",
+//     title: "Podcast: Research, Innovation & Real-World Impact",
+//     source: "The Research Matters",
+//   },
+//   {
+//     image: image3,
+//     type: "Talk",
+//     date: "Mar 10, 2024",
+//     title: "Keynote Talk at International Conference on Data Engineering",
+//     source: "ICDE 2024",
+//   },
+//   {
+//     image: image4,
+//     type: "Feature",
+//     date: "Feb 5, 2024",
+//     title: "Top 2% Scientist in the World: Elsevier Stanford List 2024",
+//     source: "Times of India",
+//   },
+// ];
 
 const latest = [
   {
@@ -142,6 +147,11 @@ const gallery = [
   { image: image9, alt: "Scientific Workshop" },
   { image: image10, alt: "Media Interaction" },
   { image: image11, alt: "Public Lecture" },
+  { image: image12, alt: "Public Lecture" },
+  { image: image13, alt: "Public Lecture" },
+  { image: image14, alt: "Public Lecture" },
+  { image: image15, alt: "Public Lecture" },
+   { image: image16, alt: "Public Lecture" },
 ];
 
 export default function Media() {
@@ -239,55 +249,7 @@ export default function Media() {
       {/* Content */}
       <section className="py-9 sm:py-11 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 space-y-11 sm:space-y-14">
-          {/* Featured */}
-          {/* <div>
-            <SectionHead title="Featured Media" />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {featured.map((item, i) => (
-                <motion.article
-                  key={item.title}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.2 }}
-                  custom={i}
-                  variants={fadeUp}
-                  className="group bg-white border border-[#e8e3dc] rounded-[7px] overflow-hidden shadow-[0_3px_12px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:border-[#C8922A]/60 hover:shadow-[0_18px_40px_rgba(200,146,42,0.15)] transition-all duration-500"
-                >
-                  <div className="relative h-[160px] overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <span className="absolute left-3 bottom-3 bg-white/90 text-[#8e5b0d] text-[10px] font-semibold px-2 py-[4px] rounded-[3px]">
-                      {item.type}
-                    </span>
-                  </div>
-
-                  <div className="px-4 py-4">
-                    <p className="text-[11px] text-[#8a8f98] mb-2">
-                      {item.date}
-                    </p>
-                    <h4 className="font-serif text-[15px] text-[#1A1A1A] leading-[1.4] min-h-[62px] group-hover:text-[#C8922A] transition-colors duration-300">
-                      {item.title}
-                    </h4>
-
-                    <div className="flex items-center justify-between mt-4">
-                      <span className="text-[11px] font-semibold text-[#C8922A]">
-                        {item.source}
-                      </span>
-                      <ExternalLink
-                        size={13}
-                        className="text-[#777] group-hover:text-[#C8922A]"
-                      />
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
-          </div> */}
-
+          
           {/* Latest */}
           <div>
             <SectionHead title="Latest Media" />
