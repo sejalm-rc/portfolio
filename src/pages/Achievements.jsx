@@ -1,6 +1,6 @@
 import {
   Trophy, FileBadge, Users, Globe, BookOpen, Medal, Star,
-  ShieldCheck, Mic, Building2, Sprout, BarChart3, ArrowRight,
+  ShieldCheck, Mic, Building2, Sprout, BarChart3,
 } from "lucide-react";
 
 import achievementsBg from "../assets/achbg.png";

@@ -30,20 +30,16 @@ export default function Header() {
               className="w-[32px] h-[30px] sm:w-[38px] sm:h-[36px] object-contain group-hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="block sm:hidden leading-none">
-              <img src={Dlogo}
-              alt="Logo" className="w-[22px] h-[20px] object-contain" >
-              </img>
-            </div>
+            <div className="block leading-none">
+              <div className="leading-none">
+                <h1 className="font-serif text-[11px] sm:text-[16px] font-semibold text-[#1d1d1d] leading-[16px] sm:leading-[22px] transition-colors duration-300">
+                  Dr. Dharmesh Dhabliya
+                </h1>
 
-            <div className="hidden sm:block leading-none">
-              <h1 className="font-serif text-[13px] sm:text-[16px] font-semibold text-[#1d1d1d] leading-[22px]  transition-colors duration-300">
-                Dr. Dharmesh Dhabliya
-              </h1>
-
-              <p className="text-[8px] sm:text-[10px] text-[#626060] font-medium">
-                Researcher • Professor • Entrepreneur
-              </p>
+                <p className="text-[7px] sm:text-[10px] text-[#626060] font-medium">
+                  Researcher • Professor • Entrepreneur
+                </p>
+              </div>
             </div>
           </button>
 
@@ -111,24 +107,22 @@ export default function Header() {
       >
         <div className="h-[58px] px-4 flex items-center justify-between border-b border-[#eee2d4]">
           <button
-            onClick={() => {
-              setOpen(false);
-              navigate("/");
-            }}
-            className="flex items-center gap-2 min-w-0 text-left"
+            onClick={() => navigate("/")}
+            className="group flex items-center gap-2 shrink-0 text-left max-w-[240px] sm:max-w-none"
           >
             <img
               src={Dlogo}
               alt="Logo"
-              className="w-[32px] h-[30px] shrink-0 object-contain"
+              className="w-[32px] h-[30px] sm:w-[38px] sm:h-[36px] object-contain shrink-0 group-hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="min-w-0">
-              <h2 className="font-serif text-[15px] font-semibold text-[#1d1d1d] leading-none">
-                DD
-              </h2>
-              <p className="text-[8px] text-[#626060] font-medium mt-1">
-                Researcher • Professor
+            <div className="leading-none min-w-0">
+              <h1 className="font-serif text-[11px] sm:text-[16px] font-semibold text-[#1d1d1d] leading-[15px] sm:leading-[22px] truncate transition-colors duration-300">
+                Dr. Dharmesh Dhabliya
+              </h1>
+
+              <p className="text-[7px] sm:text-[10px] text-[#626060] font-medium truncate">
+                Researcher • Professor • Entrepreneur
               </p>
             </div>
           </button>
