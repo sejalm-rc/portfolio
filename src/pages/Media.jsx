@@ -207,32 +207,34 @@ export default function Media() {
         </div>
       </section>
 
-      {/* Tabs */}
-      <section className="hidden md:block bg-white border-b border-[#e8e4dd] sticky top-[56px] sm:top-[60px] z-30">
-        <div className="max-w-9xl mx-auto px-4 sm:px-8 lg:px-16">
-          <div className="flex overflow-x-auto no-scrollbar">
-            {tabs.map((tab) => (
-              <button
-                key={tab.label}
-                onClick={() => setActiveTab(tab.label)}
-                className={`relative min-w-[120px] h-[58px] px-4 flex flex-col items-center justify-center gap-1.5 text-[11px] font-semibold transition-all duration-300 hover:bg-[#FAF8F4] ${
-                  activeTab === tab.label
-                    ? "text-[#C8922A]"
-                    : "text-[#374151] hover:text-[#C8922A]"
-                }`}
-              >
-                <span className="[&_svg]:w-[18px] [&_svg]:h-[18px]">
-                  {tab.icon}
-                </span>
-                {tab.label}
-                {activeTab === tab.label && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[82px] h-[2px] bg-[#C8922A]" />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* Tabs */}
+<section className="hidden md:block bg-white border-b border-[#e8e4dd] sticky top-[56px] sm:top-[60px] z-30">
+  <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-between">
+      {tabs.map((tab) => (
+        <button
+          key={tab.label}
+          onClick={() => setActiveTab(tab.label)}
+          className={`relative flex-1 h-[58px] px-3 flex flex-col items-center justify-center gap-1.5 text-[11px] font-medium transition-all duration-300 hover:bg-[#FAF8F4] ${
+            activeTab === tab.label
+              ? "text-[#C8922A]"
+              : "text-[#1f2937] hover:text-[#C8922A]"
+          }`}
+        >
+          <span className="[&_svg]:w-[17px] [&_svg]:h-[17px]">
+            {tab.icon}
+          </span>
+
+          <span className="whitespace-nowrap">{tab.label}</span>
+
+          {activeTab === tab.label && (
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[82px] h-[2px] bg-[#C8922A]" />
+          )}
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Content */}
       <section className="py-9 sm:py-11 bg-white overflow-hidden">
