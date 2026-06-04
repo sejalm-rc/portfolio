@@ -8,11 +8,9 @@ import {
   ExternalLink,
   CheckCircle,
   AlertCircle,
-  GraduationCap,
 } from "lucide-react";
 
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiScopus } from "react-icons/si";
 
 import logo from "../assets/Dlogo.png";
 import { Link } from "react-router-dom";
@@ -73,7 +71,7 @@ export default function Footer() {
 
     localStorage.setItem(
       "footerSubscribers",
-      JSON.stringify([...subscribers, email])
+      JSON.stringify([...subscribers, email]),
     );
 
     setMessage("Thank you! You have subscribed successfully.");
@@ -114,21 +112,33 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-wrap gap-3 mt-5">
-              <SocialIcon href="https://www.linkedin.com/in/dr-dharmesh-dhabliya-69453b7a/" label="LinkedIn">
-                <FaLinkedinIn size={15} /> 
+              <SocialIcon
+                href="https://www.linkedin.com/in/dr-dharmesh-dhabliya-69453b7a/"
+                label="LinkedIn"
+              >
+                <FaLinkedinIn size={15} />
               </SocialIcon>
 
-              <SocialIcon href="https://www.scopus.com/authid/detail.uri?authorId=57222241738" label="Scopus">
+              <SocialIcon
+                href="https://www.scopus.com/authid/detail.uri?authorId=57222241738"
+                label="Scopus"
+              >
                 {/* <SiScopus size={15} />  */}
-                <p className="text-[14px] font-bold">SC</p> 
+                <p className="text-[14px] font-bold">SC</p>
               </SocialIcon>
 
-              <SocialIcon href="https://www.webofscience.com/wos/author/record/AAL-3381-2021" label="Web of Science">
+              <SocialIcon
+                href="https://www.webofscience.com/wos/author/record/AAL-3381-2021"
+                label="Web of Science"
+              >
                 {/* <GraduationCap size={15} /> */}
                 <p className="text-[14px] font-bold">WS</p>
               </SocialIcon>
 
-              <SocialIcon href="https://scholar.google.com/citations?user=FhvqepUAAAAJ&hl=en&oi=ao" label="Google Scholar">
+              <SocialIcon
+                href="https://scholar.google.com/citations?user=FhvqepUAAAAJ&hl=en&oi=ao"
+                label="Google Scholar"
+              >
                 {/* <GraduationCap size={15} /> */}
                 <p className="text-[14px] font-bold">GS</p>
               </SocialIcon>
@@ -173,7 +183,10 @@ export default function Footer() {
               </p>
 
               <p className="flex items-start gap-3 text-[12px] text-[#444]">
-                <MapPin size={15} className="text-[#b87518] mt-[2px] shrink-0" />
+                <MapPin
+                  size={15}
+                  className="text-[#b87518] mt-[2px] shrink-0"
+                />
                 India
               </p>
             </div>
@@ -250,7 +263,8 @@ export default function Footer() {
       <div className="border-t border-[#eee2d4] bg-[#f7f1e9]">
         <div className="max-w-[1160px] mx-auto px-4 sm:px-6 min-h-[36px] py-1 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-[11px] text-[#555] text-center sm:text-left">
-            © {new Date().getFullYear()} Dr. Dharmesh Dhabliya. All Rights Reserved.
+            © {new Date().getFullYear()} Dr. Dharmesh Dhabliya. All Rights
+            Reserved.
           </p>
 
           <div className="flex gap-5">
