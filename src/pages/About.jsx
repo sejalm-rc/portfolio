@@ -174,19 +174,19 @@ export default function About() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-[#f5f0e8] overflow-hidden min-h-[560px] lg:min-h-[420px]">
+      <section className="relative bg-[#FAF4F1] overflow-hidden min-h-[560px] lg:min-h-[420px]">
         {/* background image fills right portion */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute w-full h-full">
           <img
             src={bg2}
             alt=""
-            className="absolute right-0 top-0 h-full w-full lg:w-[65%] object-cover object-center lg:object-left opacity-25 lg:opacity-100" 
+            className="absolute right-0 top-0 h-full w-full lg:w-[65%] object-cover object-center lg:object-left " 
           />
           {/* left fade overlay */}
           <div
-            className="absolute inset-0"
+            className="absolute "
             style={{
-              background: 'linear-gradient(to right, #f5f0e8 0%, #f5f0e8e6 45%, transparent 100%)',
+              background: 'linear-gradient(to right, #f5f0e8 0%, #f5f0e8e6 45%, transparent 20%)',
             }}
           />
         </div>

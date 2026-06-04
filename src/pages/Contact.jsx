@@ -127,23 +127,23 @@ export default function Contact() {
     <section className="bg-[#fbfaf8] text-[#171717]">
       {/* HERO */}
       <div
-        className="h-[350px] bg-cover bg-center flex items-center"
+        className="min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:h-[350px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${contactBg})` }}
       >
-        <div className="max-w-[1160px] mx-auto px-6 w-full">
-          <div className="max-w-[430px]">
+        <div className="max-w-[1160px] mx-auto px-4 sm:px-6 w-full">
+          <div className="w-full max-w-full sm:max-w-[430px]">
             <p className="text-[10px] font-bold tracking-[1.5px] uppercase text-[#b87518] mb-[12px]">
               Contact us
             </p>
 
             <h1 className="font-serif text-[#161616] xl:text-[42px] lg:text-[40px] md:text-[32px] sm:text-[30px] text-[24px] leading-[1.08] font-medium tracking-[-0.4px]">
-              Let’s Connect
+              Let's Connect
             </h1>
 
             <div className="w-[38px] h-[3px] bg-[#b87518] mt-[17px] mb-[17px]" />
 
-            <p className="text-[14px] leading-[1.65] text-[#4f4f4f] max-w-[390px]">
-              I’m always open to collaborations, speaking opportunities,
+            <p className="text-[14px] leading-[1.65] text-[#4f4f4f] max-w-full sm:max-w-[390px]">
+              I'm always open to collaborations, speaking opportunities,
               partnerships, and discussions that create meaningful impact. Feel
               free to reach out.
             </p>
@@ -152,10 +152,11 @@ export default function Contact() {
       </div>
 
       {/* CONTACT AREA */}
-      <div className="max-w-[1160px] mx-auto px-6 py-10">
-        <div className="grid lg:grid-cols-[58%_42%] gap-16">
+      <div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] gap-8 sm:gap-10 lg:gap-16">
+          {/* FORM */}
           <div>
-            <h2 className="font-serif text-[26px] mb-2">Send a Message</h2>
+            <h2 className="font-serif text-[22px] sm:text-[26px] mb-2">Send a Message</h2>
             {message && (
               <div
                 className={`mb-5 px-4 py-3 rounded-md text-[13px] font-medium ${
@@ -208,65 +209,69 @@ export default function Contact() {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="
-  group
-  relative
-  overflow-hidden
-  h-[42px]
-  px-[22px]
-  bg-[linear-gradient(135deg,#d69a22_0%,#b87518_45%,#8e5b0d_100%)]
-  text-white
-  text-[13px]
-  font-semibold
-  rounded-[6px]
-  flex
-  items-center
-  gap-[8px]
-  shadow-[0_8px_22px_rgba(184,117,24,0.28)]
-  transition-all
-  duration-500
-  hover:-translate-y-[3px]
-  hover:scale-[1.02]
-  hover:shadow-[0_18px_35px_rgba(184,117,24,0.42)]
-  active:scale-[0.98]
-  "
-              >
-                <span
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+                <button
+                  type="submit"
                   className="
-    absolute
-    inset-0
-    -translate-x-[120%]
-    bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
-    group-hover:translate-x-[220%]
-    transition-transform
-    duration-[1200ms]
-    "
-                />
+                    group
+                    relative
+                    overflow-hidden
+                    h-[42px]
+                    px-[22px]
+                    bg-[linear-gradient(135deg,#d69a22_0%,#b87518_45%,#8e5b0d_100%)]
+                    text-white
+                    text-[13px]
+                    font-semibold
+                    rounded-[6px]
+                    flex
+                    items-center
+                    gap-[8px]
+                    shadow-[0_8px_22px_rgba(184,117,24,0.28)]
+                    transition-all
+                    duration-500
+                    hover:-translate-y-[3px]
+                    hover:scale-[1.02]
+                    hover:shadow-[0_18px_35px_rgba(184,117,24,0.42)]
+                    active:scale-[0.98]
+                    whitespace-nowrap
+                  "
+                >
+                  <span
+                    className="
+                      absolute
+                      inset-0
+                      -translate-x-[120%]
+                      bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
+                      group-hover:translate-x-[220%]
+                      transition-transform
+                      duration-[1200ms]
+                    "
+                  />
 
-                <span className="relative z-10">Send Message</span>
+                  <span className="relative z-10">Send Message</span>
 
-                <Send
-                  size={14}
-                  className="
-    relative
-    z-10
-    transition-all
-    duration-300
-    group-hover:translate-x-1
-    group-hover:-rotate-6
-    "
-                />
-              </button>
+                  <Send
+                    size={14}
+                    className="
+                      relative
+                      z-10
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-1
+                      group-hover:-rotate-6
+                    "
+                  />
+                </button>
+              </div>
               <p className="text-[12px] text-[#555]">
                 🔒 Your information is safe with us. We respect your privacy.
               </p>
             </form>
           </div>
 
-          <div>
-            <h2 className="font-serif text-[26px] mb-2">Contact Information</h2>
+          {/* CONTACT INFORMATION */}
+          <div className="mt-2 lg:mt-0">
+            <h2 className="font-serif text-[22px] sm:text-[26px] mb-2">Contact Information</h2>
             <div className="w-[32px] h-[2px] bg-[#b87518] mb-3" />
 
             <Info
@@ -278,7 +283,7 @@ export default function Contact() {
             <Info icon={MapPin} title="Location" value="India" />
 
             <div className="flex gap-4 py-5 border-b border-[#eadfd3]">
-              <div className="w-[52px] h-[52px] bg-[#f7f2ec] rounded-[5px] flex items-center justify-center text-[#b87518]">
+              <div className="w-[52px] h-[52px] shrink-0 bg-[#f7f2ec] rounded-[5px] flex items-center justify-center text-[#b87518]">
                 <Globe size={24} />
               </div>
 
@@ -286,7 +291,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-[15px] font-semibold mb-2">Connect</h3>
 
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {socialLinks.map((item) => (
                       <a
                         key={item.label}
@@ -296,21 +301,21 @@ export default function Contact() {
                         }
                         rel="noopener noreferrer"
                         className="
-          w-[28px]
-          h-[28px]
-          rounded-full
-          border
-          border-[#ddd]
-          flex
-          items-center
-          justify-center
-          text-[11px]
-          font-semibold
-          hover:bg-[#b87518]
-          hover:text-white
-          transition
-          cursor-pointer
-        "
+                          w-[28px]
+                          h-[28px]
+                          rounded-full
+                          border
+                          border-[#ddd]
+                          flex
+                          items-center
+                          justify-center
+                          text-[11px]
+                          font-semibold
+                          hover:bg-[#b87518]
+                          hover:text-white
+                          transition
+                          cursor-pointer
+                        "
                       >
                         {item.label}
                       </a>
@@ -320,13 +325,14 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-[#f7f2ec] rounded-[5px] p-6 mt-4 flex gap-5">
-              <div className="w-[60px] h-[60px] rounded-full bg-[#f8e9d7] text-[#b87518] flex items-center justify-center shrink-0">
+            {/* COLLABORATION CARD */}
+            <div className="bg-[#f7f2ec] rounded-[5px] p-4 sm:p-6 mt-4 flex flex-col xs:flex-row gap-4 sm:gap-5">
+              <div className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#f8e9d7] text-[#b87518] flex items-center justify-center shrink-0">
                 <Handshake size={25} />
               </div>
 
-              <div>
-                <h3 className="font-serif text-[20px]">Let’s Collaborate</h3>
+              <div className="min-w-0">
+                <h3 className="font-serif text-[18px] sm:text-[20px]">Let's Collaborate</h3>
                 <p className="text-[13px] text-[#555] leading-[1.8] mt-1">
                   I welcome opportunities for research collaboration,
                   consulting, mentoring, speaking engagements, and
@@ -334,92 +340,93 @@ export default function Contact() {
                 </p>
 
                 <button
-  onClick={() =>
-    window.open(
-      "https://mail.google.com/mail/?view=cm&fs=1&to=dharmesh.dhabliya@viit.ac.in&su=Collaboration Inquiry",
-      "_blank"
-    )
-  }
-  className="
-    group
-    relative
-    overflow-hidden
+                  onClick={() =>
+                    window.open(
+                      "https://mail.google.com/mail/?view=cm&fs=1&to=dharmesh.dhabliya@viit.ac.in&su=Collaboration Inquiry",
+                      "_blank"
+                    )
+                  }
+                  className="
+                    group
+                    relative
+                    overflow-hidden
+                    mt-2
+                    h-[35px]
+                    px-4
+                    border
+                    border-[#b87518]
+                    text-[#b87518]
+                    text-[11px]
+                    font-semibold
+                    rounded-[3px]
+                    flex
+                    items-center
+                    gap-2
+                    transition-all
+                    duration-500
+                    hover:bg-[#b87518]
+                    hover:text-white
+                    hover:-translate-y-[3px]
+                    hover:scale-[1.02]
+                    active:scale-[0.98]
+                    whitespace-nowrap
+                    max-w-full
+                  "
+                >
+                  {/* Shine */}
+                  <span
+                    className="
+                      absolute
+                      inset-0
+                      -translate-x-[120%]
+                      bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
+                      group-hover:translate-x-[220%]
+                      transition-transform
+                      duration-[1200ms]
+                    "
+                  />
 
-    mt-2
-    h-[35px]
-    px-4
+                  <span className="relative z-10 truncate">
+                    Explore Collaboration Opportunities
+                  </span>
 
-    border
-    border-[#b87518]
-
-    text-[#b87518]
-    text-[11px]
-    font-semibold
-    rounded-[3px]
-
-    flex
-    items-center
-    gap-2
-
-    transition-all
-    duration-500
-
-    hover:bg-[#b87518]
-    hover:text-white
-    hover:-translate-y-[3px]
-    hover:scale-[1.02]
-
-    active:scale-[0.98]
-  "
->
-  {/* Shine */}
-  <span
-    className="
-      absolute
-      inset-0
-      -translate-x-[120%]
-      bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
-      group-hover:translate-x-[220%]
-      transition-transform
-      duration-[1200ms]
-    "
-  />
-
-  <span className="relative z-10">
-    Explore Collaboration Opportunities
-  </span>
-
-  <ArrowRight
-    size={12}
-    className="
-      relative
-      z-10
-      transition-all
-      duration-300
-      group-hover:translate-x-1
-      group-hover:-rotate-6
-    "
-  />
-</button>
+                  <ArrowRight
+                    size={12}
+                    className="
+                      relative
+                      z-10
+                      shrink-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-1
+                      group-hover:-rotate-6
+                    "
+                  />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      {/* AREAS I CAN HELP WITH */}
       <div className="bg-white border-y border-[#eadfd3]">
-        <div className="max-w-[1160px] mx-auto px-6 py-8">
-          <h2 className="font-serif text-[26px] text-center">
+        <div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-8">
+          <h2 className="font-serif text-[22px] sm:text-[26px] text-center">
             Areas I Can Help With
           </h2>
           <div className="w-[32px] h-[2px] bg-[#b87518] mx-auto my-4" />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-8">
             {help.map(([Icon, title, desc], index) => (
               <div
                 key={title}
-                className={`text-center px-5 py-5 hover:bg-[#fbfaf8] transition ${
+                className={`text-center px-4 sm:px-5 py-5 hover:bg-[#fbfaf8] transition ${
                   index !== 0 ? "lg:border-l border-[#eadfd3]" : ""
+                } ${
+                  index > 0 && index < 2 ? "sm:border-l" : ""
+                } ${
+                  index > 0 && index % 3 === 0 ? "md:border-l-0" : index > 0 ? "md:border-l border-[#eadfd3]" : ""
                 }`}
               >
                 <Icon size={34} className="mx-auto text-[#b87518] mb-4" />
@@ -435,19 +442,21 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* CTA SECTION */}
       <div className="bg-[#f7f2ec]">
-        <div className="max-w-[1160px] mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-5">
-            <div className="w-[68px] h-[68px] rounded-full bg-[#f8eadc] text-[#b87518] flex items-center justify-center shrink-0">
-              <Send size={28} />
+        <div className="max-w-[1160px] mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 w-full md:w-auto">
+            <div className="w-[52px] h-[52px] sm:w-[68px] sm:h-[68px] rounded-full bg-[#f8eadc] text-[#b87518] flex items-center justify-center shrink-0">
+              <Send size={24} className="sm:hidden" />
+              <Send size={28} className="hidden sm:block" />
             </div>
 
-            <div>
-              <h3 className="font-serif text-[22px] font-medium">
+            <div className="min-w-0">
+              <h3 className="font-serif text-[18px] sm:text-[22px] font-medium">
                 Have an Idea or Project in Mind?
               </h3>
-              <p className="text-[13px] text-[#2a2929] leading-[1.8] mt-1 w-[400px]">
-                I’d love to hear about it. Let’s start a conversation and
+              <p className="text-[13px] text-[#2a2929] leading-[1.8] mt-1 w-full md:w-auto lg:w-[400px]">
+                I'd love to hear about it. Let's start a conversation and
                 explore how we can work together to make a difference.
               </p>
             </div>
@@ -461,49 +470,43 @@ export default function Contact() {
               )
             }
             className="
-  group
-  relative
-  overflow-hidden
-
-  h-[42px]
-  px-[22px]
-
-  bg-[linear-gradient(135deg,#d69a22_0%,#b87518_45%,#8e5b0d_100%)]
-
-  text-white
-  text-[13px]
-  font-semibold
-  rounded-[6px]
-
-  flex
-  items-center
-  gap-[8px]
-
-  shadow-[0_8px_22px_rgba(184,117,24,0.28)]
-
-  transition-all
-  duration-500
-
-  hover:-translate-y-[3px]
-  hover:scale-[1.02]
-
-  hover:shadow-[0_18px_35px_rgba(184,117,24,0.42)]
-
-  active:scale-[0.98]
-  "
+              group
+              relative
+              overflow-hidden
+              h-[42px]
+              px-[22px]
+              bg-[linear-gradient(135deg,#d69a22_0%,#b87518_45%,#8e5b0d_100%)]
+              text-white
+              text-[13px]
+              font-semibold
+              rounded-[6px]
+              flex
+              items-center
+              gap-[8px]
+              shadow-[0_8px_22px_rgba(184,117,24,0.28)]
+              transition-all
+              duration-500
+              hover:-translate-y-[3px]
+              hover:scale-[1.02]
+              hover:shadow-[0_18px_35px_rgba(184,117,24,0.42)]
+              active:scale-[0.98]
+              whitespace-nowrap
+              self-start
+              md:self-auto
+              shrink-0
+            "
           >
             {/* Shine */}
             <span
               className="
-    absolute
-    inset-0
-    -translate-x-[120%]
-    bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
-
-    group-hover:translate-x-[220%]
-    transition-transform
-    duration-[1200ms]
-    "
+                absolute
+                inset-0
+                -translate-x-[120%]
+                bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent)]
+                group-hover:translate-x-[220%]
+                transition-transform
+                duration-[1200ms]
+              "
             />
 
             <span className="relative z-10">Get in Touch</span>
@@ -511,13 +514,13 @@ export default function Contact() {
             <ArrowRight
               size={14}
               className="
-    relative
-    z-10
-    transition-all
-    duration-300
-    group-hover:translate-x-1
-    group-hover:-rotate-6
-    "
+                relative
+                z-10
+                transition-all
+                duration-300
+                group-hover:translate-x-1
+                group-hover:-rotate-6
+              "
             />
           </button>
         </div>
@@ -544,14 +547,15 @@ function Field({ label, placeholder, name, value, onChange, type = "text" }) {
 
 function Info({ icon: Icon, title, value }) {
   return (
-    <div className="flex gap-5 py-5 border-b border-[#eadfd3]">
-      <div className="w-[52px] h-[52px] bg-[#f7f2ec] rounded-[5px] flex items-center justify-center text-[#b87518]">
-        <Icon size={24} />
+    <div className="flex gap-4 sm:gap-5 py-5 border-b border-[#eadfd3]">
+      <div className="w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] shrink-0 bg-[#f7f2ec] rounded-[5px] flex items-center justify-center text-[#b87518]">
+        <Icon size={22} className="sm:hidden" />
+        <Icon size={24} className="hidden sm:block" />
       </div>
 
-      <div>
+      <div className="min-w-0">
         <h3 className="text-[15px] font-semibold">{title}</h3>
-        <p className="text-[13px] text-[#555] mt-1">{value}</p>
+        <p className="text-[13px] text-[#555] mt-1 break-words">{value}</p>
       </div>
     </div>
   );

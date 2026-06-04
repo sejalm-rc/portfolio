@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import bg7 from "../assets/bg 7.png";
+import bg7 from "../assets/mediabg.jpeg";
 import image from "../assets/media1.png";
 import image2 from "../assets/media2.jpeg";
 import image3 from "../assets/media3.jpeg";
@@ -30,10 +30,6 @@ import image13 from "../assets/media13.jpeg";
 import image14 from "../assets/media14.jpeg";
 import image15 from "../assets/media15.jpeg";
 import image16 from "../assets/media16.jpeg";
-
-
-
-
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -57,37 +53,6 @@ const tabs = [
   { label: "Videos", icon: <Play size={14} /> },
   { label: "Gallery", icon: <Image size={14} /> },
 ];
-
-// const featured = [
-//   {
-//     image: image,
-//     type: "Interview",
-//     date: "May 15, 2024",
-//     title: "Interview on AI & the Future of Smart Cities",
-//     source: "elets TV",
-//   },
-//   {
-//     image: image2,
-//     type: "Podcast",
-//     date: "Apr 22, 2024",
-//     title: "Podcast: Research, Innovation & Real-World Impact",
-//     source: "The Research Matters",
-//   },
-//   {
-//     image: image3,
-//     type: "Talk",
-//     date: "Mar 10, 2024",
-//     title: "Keynote Talk at International Conference on Data Engineering",
-//     source: "ICDE 2024",
-//   },
-//   {
-//     image: image4,
-//     type: "Feature",
-//     date: "Feb 5, 2024",
-//     title: "Top 2% Scientist in the World: Elsevier Stanford List 2024",
-//     source: "Times of India",
-//   },
-// ];
 
 const latest = [
   {
@@ -169,7 +134,7 @@ export default function Media() {
           <img
             src={bg7}
             alt=""
-            className="h-full w-full object-cover object-right opacity-25 md:opacity-100"
+            className="h-full w-full object-cover object-right"
           />
           <div
             className="absolute inset-0"
