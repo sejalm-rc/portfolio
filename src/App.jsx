@@ -27,7 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/startups" element={<Companies />} />
+          <Route path="/projects" element={<Companies />} />
           <Route path="/media" element={<Media />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/contact" element={<Contact />} />

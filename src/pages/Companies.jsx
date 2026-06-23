@@ -11,35 +11,6 @@ const fadeUp = {
 };
 
 
-function IconBook() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-    </svg>
-  );
-}
-function IconGrad() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" />
-    </svg>
-  );
-}
-function IconHandshake() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-    </svg>
-  );
-}
-function IconGlobe() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
-      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-    </svg>
-  );
-}
 function IconUsers() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -73,21 +44,7 @@ function IconTarget() {
     </svg>
   );
 }
-function IconLeaf() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M17 8C8 10 5.9 16.17 3.82 19.31a1 1 0 0 0 1.35 1.39C8.39 18.4 12 15.5 12 12" />
-      <path d="M17 8C12 8 8 12 8 17" /><path d="M17 8c0 8-8 12-14 13" />
-    </svg>
-  );
-}
-function IconHeart() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-    </svg>
-  );
-}
+
 function IconEye() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8922A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -96,23 +53,23 @@ function IconEye() {
   );
 }
 const companies = [
-  {
-    id: 'mri',
-    fullName: 'MRI India',
-    subtitle: 'Multidisciplinary Research Institute of India',
-    subtitleColor: '#C8922A',
-    sub: 'Mathematical Research Institute of India',
-    desc: 'MRI India is a research-driven institute dedicated to advancing mathematical sciences and their real-world applications. We focus on high-quality research, capacity building, and creating knowledge-based solutions for complex problems.',
-    url: 'https://www.mriindia.com',
-    vision: 'To be a global leader in mathematical research and education, inspiring innovation and shaping solutions for a better tomorrow.',
-    features: [
-      { icon: <IconBook />, title: 'Advanced Research', desc: 'Pioneering research in pure and applied mathematics.' },
-      { icon: <IconGrad />, title: 'Training & Development', desc: 'Empowering researchers and students through programs.' },
-      { icon: <IconHandshake />, title: 'Collaborations', desc: 'Partnering with institutions and industry globally.' },
-      { icon: <IconGlobe />, title: 'Impact Driven', desc: 'Applying mathematical excellence for societal benefit.' },
-    ],
+  // {
+  //   id: 'mri',
+  //   fullName: 'MRI India',
+  //   subtitle: 'Multidisciplinary Research Institute of India',
+  //   subtitleColor: '#C8922A',
+  //   sub: 'Mathematical Research Institute of India',
+  //   desc: 'MRI India is a research-driven institute dedicated to advancing mathematical sciences and their real-world applications. We focus on high-quality research, capacity building, and creating knowledge-based solutions for complex problems.',
+  //   url: 'https://www.mriindia.com',
+  //   vision: 'To be a global leader in mathematical research and education, inspiring innovation and shaping solutions for a better tomorrow.',
+  //   features: [
+  //     { icon: <IconBook />, title: 'Advanced Research', desc: 'Pioneering research in pure and applied mathematics.' },
+  //     { icon: <IconGrad />, title: 'Training & Development', desc: 'Empowering researchers and students through programs.' },
+  //     { icon: <IconHandshake />, title: 'Collaborations', desc: 'Partnering with institutions and industry globally.' },
+  //     { icon: <IconGlobe />, title: 'Impact Driven', desc: 'Applying mathematical excellence for societal benefit.' },
+  //   ],
    
-  },
+  // },
   {
     id: 'rc',
     fullName: 'Researcher Connect',
@@ -130,23 +87,23 @@ const companies = [
     ],
    
   },
-  {
-    id: 'siare',
-    fullName: 'SIARE',
-    subtitle: 'Society of Integrated Academic Research and Education',
-    subtitleColor: '#C8922A',
-    sub: '',
-    desc: 'SIARE Society is a non-profit organization committed to social development, education, and empowerment initiatives. We work towards building an inclusive society through various educational, environmental, and community programs.',
-    url: 'siaresociety.org',
-    vision: 'To build a compassionate and empowered society through education, sustainability, and community development.',
-    features: [
-      { icon: <IconGrad />, title: 'Education for All', desc: 'Promoting quality education and lifelong learning.' },
-      { icon: <IconLeaf />, title: 'Sustainable Initiatives', desc: 'Working on environmental sustainability and wellness.' },
-      { icon: <IconHeart />, title: 'Community Welfare', desc: 'Empowering communities through various programs.' },
-      { icon: <IconTarget />, title: 'Social Impact', desc: 'Creating positive and lasting social change.' },
-    ],
+  // {
+  //   id: 'siare',
+  //   fullName: 'SIARE',
+  //   subtitle: 'Society of Integrated Academic Research and Education',
+  //   subtitleColor: '#C8922A',
+  //   sub: '',
+  //   desc: 'SIARE Society is a non-profit organization committed to social development, education, and empowerment initiatives. We work towards building an inclusive society through various educational, environmental, and community programs.',
+  //   url: 'siaresociety.org',
+  //   vision: 'To build a compassionate and empowered society through education, sustainability, and community development.',
+  //   features: [
+  //     { icon: <IconGrad />, title: 'Education for All', desc: 'Promoting quality education and lifelong learning.' },
+  //     { icon: <IconLeaf />, title: 'Sustainable Initiatives', desc: 'Working on environmental sustainability and wellness.' },
+  //     { icon: <IconHeart />, title: 'Community Welfare', desc: 'Empowering communities through various programs.' },
+  //     { icon: <IconTarget />, title: 'Social Impact', desc: 'Creating positive and lasting social change.' },
+  //   ],
    
-  },
+  // },
 ];
 
 export default function Companies() {

@@ -1,23 +1,33 @@
 @import "tailwindcss";
 
-/* reusable classes */
-
 .section-label {
-  @apply text-center text-[14px] uppercase tracking-[1.8px] text-[#b87518] font-bold mb-2;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #b87518;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .section-title {
-  @apply text-center font-serif text-[22px] md:text-[26px] font-semibold;
+  text-align: center;
+  font-family: serif;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-/* animations */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(24px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -29,7 +39,6 @@
     opacity: 0;
     transform: scale(.97);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
@@ -43,7 +52,6 @@
 .animate-fadeIn {
   animation: fadeIn 1s ease forwards;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -60,7 +68,6 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 
 .line-clamp-2 {
   display: -webkit-box;

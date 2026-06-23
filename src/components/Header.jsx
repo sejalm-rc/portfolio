@@ -11,7 +11,7 @@ export default function Header() {
     { label: "About", path: "/about" },
     { label: "Research", path: "/research" },
     { label: "Publications", path: "/publications" },
-    { label: "Startups", path: "/startups" },
+    { label: "Projects", path: "/projects" },
     { label: "Media", path: "/media" },
     { label: "Achievements", path: "/achievements" },
   ];
