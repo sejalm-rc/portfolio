@@ -10,7 +10,7 @@ import {
   Calendar,
   X,
 } from "lucide-react";
-import pubbg from "../assets/pubbg.png";
+import pubbg from "../assets/research-publications-background-banner.webp";
 import publicationsData from "../data/publicationsData";
 
 export default function Publications() {

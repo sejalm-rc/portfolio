@@ -14,7 +14,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import contactBg from "../assets/contactbg.png";
+import contactBg from "../assets/contact-page-background-dharmesh-Dhabliya.webp";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

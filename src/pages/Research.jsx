@@ -10,10 +10,10 @@ import {
   CircleCheck,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import researchBg from "../assets/researchbg.png";
-import Google from "../assets/google.png";
+import researchBg from "../assets/dharmesh-Dhabliya-research-publications-banner.webp";
+import Google from "../assets/google-scholar-profile-logo.webp";
 import Scopus from "../assets/scopp.png";
-import ORCID from "../assets/web.png";
+import ORCID from "../assets/official-website-link-logo.webp";
 
 export default function Research() {
   const profiles = [

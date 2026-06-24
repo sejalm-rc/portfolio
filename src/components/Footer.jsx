@@ -12,7 +12,7 @@ import {
 
 import { FaLinkedinIn } from "react-icons/fa";
 
-import logo from "../assets/Dlogo.png";
+import logo from "../assets/dharmesh-Dhabliya-logo.webp";
 import { Link } from "react-router-dom";
 
 function SocialIcon({ href, label, children }) {

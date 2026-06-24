@@ -13,23 +13,23 @@ import {
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import bg7 from "../assets/mediabg.jpeg";
-import image from "../assets/media1.png";
-import image2 from "../assets/media2.jpeg";
-import image3 from "../assets/media3.jpeg";
-import image4 from "../assets/media4.jpeg";
-import image5 from "../assets/media5.jpeg";
-import image6 from "../assets/media6.jpeg";
-import image7 from "../assets/media7.jpeg";
-import image8 from "../assets/media8.jpeg";
-import image9 from "../assets/media9.jpeg";
-import image10 from "../assets/media10.jpeg";
-import image11 from "../assets/media11.jpeg";
-import image12 from "../assets/media12.jpeg";
-import image13 from "../assets/media13.jpeg";
-import image14 from "../assets/media14.jpeg";
-import image15 from "../assets/media15.jpeg";
-import image16 from "../assets/media16.jpeg";
+import bg7 from "../assets/media-coverage-background.webp";
+import image from "../assets/dharmesh-Dhabliya-media-interview-1.webp";
+import image2 from "../assets/dharmesh-Dhabliya-news-coverage-2.webp";
+import image3 from "../assets/dharmesh-Dhabliya-research-feature-3.webp";
+import image4 from "../assets/dharmesh-Dhabliya-academic-event-4.webp";
+import image5 from "../assets/dharmesh-Dhabliya-conference-coverage-5.webp";
+import image6 from "../assets/dharmesh-Dhabliya-research-award-6.webp";
+import image7 from "../assets/dharmesh-Dhabliya-media-appearance-7.webp";
+import image8 from "../assets/dharmesh-Dhabliya-academic-recognition-8.webp";
+import image9 from "../assets/dharmesh-Dhabliya-research-news-9.webp";
+import image10 from "../assets/dharmesh-Dhabliya-publication-feature-10.webp";
+import image11 from "../assets/dharmesh-Dhabliya-academic-achievement-11.webp";
+import image12 from "../assets/dharmesh-Dhabliya-research-impact-12.webp";
+import image13 from "../assets/dharmesh-Dhabliya-conference-speaker-13.webp";
+import image14 from "../assets/dharmesh-Dhabliya-award-ceremony-14.webp";
+import image15 from "../assets/dharmesh-Dhabliya-research-excellence-15.webp";
+import image16 from "../assets/dharmesh-Dhabliya-press-coverage-16.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },

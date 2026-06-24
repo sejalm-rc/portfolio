@@ -3,7 +3,7 @@ import {
   ShieldCheck, Mic, Building2, Sprout, BarChart3,
 } from "lucide-react";
 
-import achievementsBg from "../assets/achbg.png";
+import achievementsBg from "../assets/dharmesh-Dhabliya-achievements-background.webp";
 
 export default function Achievements() {
   const stats = [

@@ -1,7 +1,7 @@
 import { Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import Dlogo from "../assets/Dlogo.png";
+import Dlogo from "../assets/dharmesh-Dhabliya-logo.webp";
 
 export default function Header() {
   const [open, setOpen] = useState(false);

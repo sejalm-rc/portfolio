@@ -22,10 +22,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import home from "../assets/bghome.png";
-import faq from "../assets/FaqH.png";
-import rcLogo from "../assets/rc.png";
-import profilePhoto from "../assets/dharmeshphoto.png";
+import home from "../assets/dharmesh-Dhabliya-homepage-hero-banner.webp";
+import faq from "../assets/faq-section-banner.webp";
+import rcLogo from "../assets/researcher-connect-logo.webp";
+import profilePhoto from "../assets/dharmesh-Dhabliya-profile-photo.webp";
 
 export default function Home() {
   const [showHeroBg, setShowHeroBg] = useState(false);

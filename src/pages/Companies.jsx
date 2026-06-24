@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import bg6 from '../assets/combg.jpeg';
-import mriLogo from "../assets/mriLogo.png";
-import rcLogo from "../assets/rc.png";
+import bg6 from '../assets/company-collaborations-background.webp';
+import mriLogo from "../assets/mri-research-institute-logo.webp";
+import rcLogo from "../assets/researcher-connect-logo.webp";
 import siareLogo from "../assets/Slogo.png";
 
 const fadeUp = {
