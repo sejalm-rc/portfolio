@@ -284,7 +284,7 @@ export default function Companies() {
                   </div>
 
                   <a
-                    href={`https://${c.url}`}
+                    href={c.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex items-center justify-center gap-1.5 border border-[#C8922A] text-[#C8922A] text-[13px] font-semibold px-4 py-2 rounded-[3px] transition-all duration-300 hover:bg-[#C8922A] hover:text-white hover:translate-x-1 focus:outline-none focus:ring-2 focus:ring-[#C8922A]/30"

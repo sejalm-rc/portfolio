@@ -27,44 +27,6 @@ import faq from "../assets/faq-section-banner.webp";
 import rcLogo from "../assets/researcher-connect-logo.webp";
 import profilePhoto from "../assets/dharmesh-Dhabliya-profile-photo.webp";
 
-export default function Home() {
-  const [showHeroBg, setShowHeroBg] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowHeroBg(window.innerWidth > 690);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const fadeUp = {
-    hidden: { opacity: 0, y: 35 },
-    visible: (i = 0) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.55,
-        delay: i * 0.08,
-        ease: "easeOut",
-      },
-    }),
-  };
-
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.92 },
-    visible: (i = 0) => ({
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        delay: i * 0.07,
-        ease: "easeOut",
-      },
-    }),
-  };
 
   function IconUsers() {
     return (
@@ -161,6 +123,45 @@ export default function Home() {
       </svg>
     );
   }
+
+export default function Home() {
+  const [showHeroBg, setShowHeroBg] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowHeroBg(window.innerWidth > 690);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 35 },
+    visible: (i = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.55,
+        delay: i * 0.08,
+        ease: "easeOut",
+      },
+    }),
+  };
+
+  const scaleIn = {
+    hidden: { opacity: 0, scale: 0.92 },
+    visible: (i = 0) => ({
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        delay: i * 0.07,
+        ease: "easeOut",
+      },
+    }),
+  };
 
   const buttonClass =
     "group relative overflow-hidden h-[42px] px-[22px] w-full sm:w-auto justify-center bg-[linear-gradient(135deg,#d69a22_0%,#b87518_45%,#8e5b0d_100%)] text-white text-[13px] font-semibold rounded-[6px] flex items-center gap-[8px] shadow-[0_8px_22px_rgba(184,117,24,0.28)] transition-all duration-500 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_18px_35px_rgba(184,117,24,0.42)] active:scale-[0.98]";
