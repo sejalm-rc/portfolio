@@ -263,11 +263,10 @@ export default function Home() {
     //   link: "https://www.researcherconnect.com",
     // },
     {
-      id: "rcLogo",
+      id: "rc",
+      logo: rcLogo,
       fullName: "Researcher Connect",
       subtitle: "Innovation and Impact Private Limited",
-      subtitleColor: "#C8922A",
-      sub: "",
       desc: "We bridge the gap between researchers, industry, and society by fostering collaborations, driving innovation, and delivering impactful solutions through research and technology.",
       url: "https://www.researcherconnect.com",
       vision:
@@ -685,7 +684,7 @@ export default function Home() {
                     </div>
 
                     <a
-                      href={`https://${c.url}`}
+                      href={c.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-5 inline-flex items-center justify-center gap-1.5 border border-[#C8922A] text-[#C8922A] text-[13px] font-semibold px-4 py-2 rounded-[3px] transition-all duration-300 hover:bg-[#C8922A] hover:text-white hover:translate-x-1"
